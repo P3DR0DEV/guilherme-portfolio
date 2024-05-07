@@ -6,7 +6,9 @@ export function Navbar() {
     <nav className="flex gap-6 p-5 items-center justify-center fixed w-full bg-black z-20">
       <NavLink href="#about">sobre mim</NavLink>
       <NavLink href="#works">trabalhos</NavLink>
-      <NavLink href="">currículo</NavLink>
+      <NavLink href="/api/download-pdf" download={true}>
+        currículo
+      </NavLink>
       <NavButton
         href="https://www.linkedin.com/in/guilherme-ferraz-de-carvalho/"
         target="_blank"
