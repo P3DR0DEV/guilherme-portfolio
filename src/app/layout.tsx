@@ -3,6 +3,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import { cn } from '@/lib/util'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, 'bg-[#252525]')}>{children}</body>
     </html>
   )
 }

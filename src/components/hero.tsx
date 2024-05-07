@@ -5,7 +5,7 @@ import { StarIcon } from './ui/icons'
 
 export function Hero() {
   return (
-    <section className="w-full bg-[#171717] h-[calc(100vh-60px)] pb-16 grid grid-cols-2 ">
+    <section className="h-[calc(100vh-60px)] pb-16 grid grid-cols-2 relative">
       <div>
         <div className="bg-[#FFB800] h-[400px] absolute bottom-0 rounded-t-full w-[800px] left-16" />
         <div className="h-[680px] absolute bottom-0 bg-[#FF6B00] w-36 rounded-se-full" />
